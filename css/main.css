@@ -164,6 +164,14 @@ input[type=button]{
   text-transform: uppercase;
 }
 
+img{
+  width: 100%;
+}
+
+figure{
+  margin: 0;
+}
+
 /* Main Style */
 
 .content-wrapper{
@@ -178,13 +186,14 @@ header, footer{
   flex-flow: row wrap;
 }
 
+/* Header Style */
+
 header{
   padding: 15px 0;
   background-color: #202322;
   height: 120px;
 }
 
-/* Header Style */
 
 header .content-wrapper{
   display: flex;
@@ -192,6 +201,14 @@ header .content-wrapper{
   align-items: center;
   flex-flow: row wrap;
   margin: 0;
+}
+
+header figure{
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-flow: row wrap;
 }
 
 .header-divider{
@@ -216,7 +233,7 @@ header nav ul{
 }
 
 header nav ul li{
-  margin: 0 30px;
+  margin-left: 30px;
 }
 
 /* Footer */
@@ -255,12 +272,14 @@ footer .social-icons p {
 }
 
 footer .social-icons img{
-  width: 50%;
+  width: 40%;
 }
 
 footer h4{
   font-weight: 400;
 }
+
+
 /* -------- Mobile -------- */
 
 /* Hero Style */
@@ -269,6 +288,14 @@ footer h4{
   display: flex;
   justify-content: center;
   flex-flow: nowrap;
+}
+
+.hero-area{
+  background-image: url(../img/jake-melara.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center ;
+  height: 500px;
 }
 
 /* Aside */
@@ -293,6 +320,13 @@ aside .form{
   flex-flow: row wrap;
 }
 
+.features{
+  background-image: url(../img/rawpixel-800820-unsplash1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center ;
+}
+
 .features h2{
   margin-bottom: 60px;
   font-weight: 500;
@@ -312,12 +346,17 @@ aside .form{
 
 .features p{
   margin: 0;
+  text-align: center;
 }
 
 .features .fontawesome-icon{
   display: flex;
   justify-content: center;
   margin: 34px 0;
+}
+
+.features .fontawesome-icon img{
+  width: 40%;
 }
 
 /* Review */
@@ -344,6 +383,13 @@ aside .form{
 
 .reviwe p{
   line-height: 18px;
+}
+
+.reviews .content-wrapper .group-review img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 /* FAQ */
@@ -512,6 +558,10 @@ aside .form{
     justify-content: space-between;
   }
 
+  header figure{
+    width: 30%;
+  }  
+
   header nav ul{
     padding: 0;
   }
@@ -561,6 +611,17 @@ aside .form{
 
   .reviews .review-text{
     flex-basis: 50%;
+    padding-left: 20px;
+  }
+
+  .reviews .content-wrapper .group-review{
+    flex-basis: 50%;
+    margin: 0;
+  }
+
+  .reviews h3{
+    margin: 0;
+    width: 60%;
   }
 
   /* Footer */
@@ -647,6 +708,10 @@ aside .form{
 
   .hero-area{
     height: 500px;
+  }
+
+  header figure{
+    width: 35%;
   }
 
   /* Aside */
