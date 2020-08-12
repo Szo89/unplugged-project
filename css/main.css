@@ -436,20 +436,24 @@ aside .form{
   background-color: #527158;
 }
 
-.map figure{
+.mission h2{
+  font-weight: 500;
+}
+
+.map figure {
   width: 100%;
-  height: 0;
-  padding-bottom: 125%;
+  height: 0; 
+  padding-bottom: 125%; 
   overflow: hidden;
   position: relative;
 }
 
-.map frame{
+.map iframe {
   width: 100%;
   height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: absolute; 
+  top: 0; 
+  left: 0; 
 }
 
 .contact-section{
@@ -457,6 +461,10 @@ aside .form{
   justify-content: center;
   align-items: center;
   background-color: #2a423a;
+}
+
+.contact-section h2{
+  font-weight: 500;
 }
 
 .contact-content p{
@@ -653,7 +661,7 @@ aside .form{
     margin: 0 60px;
   }
 
-  /* FAQ */
+  /********** FAQ **********/
 
   .faq .content-wrapper{
     display: flex;
@@ -675,7 +683,7 @@ aside .form{
     line-height: 18px;
   }
 
-  /* ABOUT */
+  /********** ABOUT **********/
 
   .mission .content-wrapper .mission-content{
     display: flex;
@@ -691,6 +699,10 @@ aside .form{
     line-height: 18px;
   }
 
+  .map figure {
+    padding-bottom: 45.5%;
+  }
+  
   .contact-section .content-wrapper .contact-content{
     display: flex;
     justify-content: space-between;
@@ -764,7 +776,7 @@ aside .form{
 
   /* Footer */
 
-  /* FAQ */
+  /********** FAQ **********/
 
   .faq .content-wrapper{
     display: flex;
@@ -780,13 +792,16 @@ aside .form{
     flex-basis: 45%;
   }
 
-  /* ABOUT */
+  /********** ABOUT **********/
 
   .mission .content-wrapper .mission-content{
     display: flex;
     justify-content: space-between;
   }
 
+  .map figure{
+    padding-bottom: 37.5%;
+  }
 
   .mission .content-wrapper .mission-content p{
     flex-basis: 45%;
