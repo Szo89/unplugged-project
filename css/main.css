@@ -220,7 +220,7 @@ header figure{
 
 header nav{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   flex-flow: nowrap;
   width: 60%;
@@ -230,6 +230,8 @@ header nav ul{
   display: flex;
   justify-content: space-between;
   width: 100%;
+  margin: 0;
+  padding-left: 0;
 }
 
 header nav ul li{
@@ -285,6 +287,8 @@ footer .social-icons p {
 
 footer h4{
   font-weight: 400;
+  margin: 0;
+  margin-bottom: 20px;
 }
 
 
@@ -306,6 +310,10 @@ footer h4{
   height: 500px;
 }
 
+.hero-area h1{
+  margin: 0;
+}
+
 /* Aside */
 
 aside{
@@ -318,6 +326,14 @@ aside{
 
 aside .form{
   margin-top: 30px;
+}
+
+aside .form-description h3{
+  margin: 0;
+}
+
+aside .form-description p{
+  margin: 12px 0;
 }
 
 /* Features */
@@ -336,6 +352,7 @@ aside .form{
 }
 
 .features h2{
+  margin-top: 0;
   margin-bottom: 60px;
   font-weight: 500;
 }
@@ -373,6 +390,7 @@ aside .form{
 }
 
 .reviews h2{
+  margin-top: 0;
   margin-bottom: 40px;
   font-weight: 500;
   line-height: 30px;
@@ -414,6 +432,8 @@ aside .form{
 
 .faq h2{
   font-weight: 500;
+  margin: 0;
+  margin-bottom: 40px;
 }
 
 .faq-content{
@@ -423,11 +443,13 @@ aside .form{
 .faq h4{
   font-weight: 500;
   line-height: 24px;
+  margin: 0;
 }
 
 .faq p{
   font-weight: 400;
   line-height: 18px;
+  margin-bottom: 40px;
 }
 
 /********** ABOUT **********/
@@ -441,6 +463,11 @@ aside .form{
 
 .mission h2{
   font-weight: 500;
+  margin: 0;
+}
+
+.mission p{
+  margin: 20px 0;
 }
 
 .map figure {
@@ -468,7 +495,13 @@ aside .form{
 
 .contact-section h2{
   font-weight: 500;
+  margin: 0;
 }
+
+.contact-section h4{
+  margin: 16px 0;
+}
+
 
 .contact-content p{
   margin: 0;
@@ -575,6 +608,7 @@ aside .form{
 
   header{
     height: 100px;
+    padding: 0;
   }
 
   .header-divider{
@@ -599,21 +633,51 @@ aside .form{
 
   /* Hero */
 
+  .hero-area h1{
+    font-size: 3em;
+  }
+
+  /* Aside */
+
   aside .content-wrapper{
     display: flex;
     justify-content: space-between;
   }
 
   aside .content-wrapper .form-description,
-  aside .content-wrapper form{
+  aside .content-wrapper .form{
     flex-basis: 40%;
   }
 
   aside .form{
     margin-top: 0;
   }
+ 
+  aside h3{
+    font-size: 1.5em;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  aside .form-description p{
+    margin-bottom: 20px;
+  }
+
+  input[type=text]{
+    padding: 0.75em;
+  }
+
+  input[type=button]{
+    padding: 12px 0;
+    margin-top: 18px;
+  }
+
 
   /* Feature */
+
+  .features h2{
+    font-size: 2.25em;
+  }
 
   .features .features-items{
     display: flex;
@@ -636,6 +700,13 @@ aside .form{
     justify-content: space-between;
   }
 
+  .reviews h2{
+    font-weight: 500;
+    font-size: 2.25em;
+    width: 80%;
+    margin-bottom: 25px;
+  }
+
   .reviews .review-text{
     flex-basis: 50%;
     padding-left: 20px;
@@ -647,8 +718,15 @@ aside .form{
   }
 
   .reviews h3{
+    font-weight: 400;
+    font-size: 1.5em;
     margin: 0;
-    width: 60%;
+    width: 100%;
+  }
+
+  .reviews p{
+    font-weight: 400;
+    margin-top: 18px;
   }
 
   /* Footer */
@@ -664,6 +742,10 @@ aside .form{
     margin: 0 60px;
   }
 
+  footer h4{
+    font-size: 1.5em;
+  }
+
   /********** FAQ **********/
 
   .faq .content-wrapper{
@@ -677,23 +759,29 @@ aside .form{
   }
 
   .faq h2{
+    font-size: 2.25em;
     font-weight: 500;
     line-height: 48px;
   }
 
-  article h4, article p{
+  .faq article h4, .faq article p{
+    font-size: .875em;
     font-weight: 500;
     line-height: 18px;
   }
 
   /********** ABOUT **********/
 
+  .mission .content-wrapper{
+    margin: 100px ;
+  }
   .mission .content-wrapper .mission-content{
     display: flex;
     justify-content: space-between;
   }
 
   .mission h2{
+    font-size: 2.25em;
     font-weight: 500;
   }
 
@@ -712,16 +800,22 @@ aside .form{
   }
 
   .contact-section h2{
+    font-size: 2.25em;
     font-weight: 500;
     line-height: 48px;
+    margin-top: 70px;
+    width: 80%;
   }
 
   .contact-section h4{
+    font-size: 1.5em;
     font-weight: 500;
+    margin-top: 50px;
   }
 
   .contact-section p{
     line-break: 18px;
+    margin-bottom: 70px;
   }
 }
 
@@ -741,9 +835,13 @@ aside .form{
     height: 500px;
   }
 
+  .hero-area h1{
+    font-size: 3.75em;
+  }
+
   header figure{
     width: 35%;
-  }
+  } 
 
   /* Aside */
 
@@ -751,13 +849,32 @@ aside .form{
     padding: 0 200px;
   }
 
-  aside .content-wrapper .form-description,
-  aside .content-wrapper .form{
-    flex-basis: 30%;
+  aside h3{
+    font-size: 1.875em;
   }
 
-  aside .form{
-    margin-top: 0;
+  aside p{
+    font-size: 1.125em;    
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  aside .content-wrapper .form-description,
+  aside .content-wrapper .form{
+    flex-basis: 40%;
+  }
+
+  aside .form-description p{
+    margin-bottom: 20px;
+  }
+
+  input[type=text]{
+    padding: 0.75em;
+  }
+
+  input[type=button]{
+    padding: 12px 0;
+    margin-top: 18px;
   }
 
   /* Features */
@@ -771,13 +888,40 @@ aside .form{
     margin: 56px 60px;
   }
 
+  .features p{
+    font-size: 1.125em;
+    line-height: 24px;
+  }
+
   /* Review */
 
   .reviews .content-wrapper{
     margin: 50px 0;
   }
 
+  .reviews h2{
+    font-size: 2.25em;
+  }
+
+  .reviews h3{
+    font-size: 1.875em;
+  }
+
+  .reviews p{
+    font-weight: 400;
+    font-size: 1.125em;
+    margin-right: 40px;
+  }
+
   /* Footer */
+
+  footer h4{
+    font-size: 1.875em;
+  }
+
+  footer p{
+    font-size: 1.125em;
+  }
 
   /********** FAQ **********/
 
@@ -787,12 +931,17 @@ aside .form{
     flex-flow: row wrap;
   }
 
-  .faq .content-wrapper h2{
+  .faq h2{
     width: 100%;
+    font-size: 3em;
   }
 
   .faq .content-wrapper article{
     flex-basis: 45%;
+  }
+
+  .faq article h4, .faq article p{
+    font-size: 1.125em;
   }
 
   /********** ABOUT **********/
@@ -800,6 +949,14 @@ aside .form{
   .mission .content-wrapper .mission-content{
     display: flex;
     justify-content: space-between;
+  }
+
+  .mission h2{
+    font-size: 3em;;
+  }
+
+  .mission p{
+    font-size: 1.125em;
   }
 
   .map figure{
@@ -813,6 +970,19 @@ aside .form{
   .contact-section .content-wrapper .contact-content{
     display: flex;
     justify-content: right;
+  }
+
+  .contact-section h2{
+    width: 100%;
+    font-size: 3em;
+  }
+
+  .contact-section h4{
+    font-size: 1.875em;
+  }
+
+  .contact-section p{
+    font-size: 1.125em;
   }
 
   .general-address{
